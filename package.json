@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/rustwasm/create-wasm-app#readme",
   "dependencies": {
-    "wasm-writing-tools": "file:../wasm-writing-tools/pkg"
+    "wasm-writing-tools": "^0.1.0"
   },
   "devDependencies": {
     "hello-wasm-pack": "^0.1.0",
