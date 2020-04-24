@@ -2,10 +2,12 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Hello wasm-pack!</title>
+    <title>Writing Tools</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap"
+      rel="stylesheet"
+    />
     <style>
-      /* https://www.color-hex.com/color-palette/5361 */
-
       html,
       body {
         height: 100%;
@@ -41,21 +43,44 @@
         margin: 0;
         padding: 0;
       }
-      .orange {
-        background-color: #ffdfba;
+
+      .error {
+        border-bottom: 1px solid #ac141c;
+      }
+
+      .suggestion-wrapper {
+        position: relative;
+        width: 0;
+        height: 0;
+        line-height: 1;
+      }
+
+      .suggestion {
+        margin: 0;
+        position: absolute;
+        top: -1em;
+        height: 1em;
+        min-width: 300px;
+        font-size: 0.8em;
+        padding: 2px;
+        color: #ac141c;
+        vertical-align: top;
+        font-family: "Patrick Hand", cursive;
+      }
+
+      .suggestion svg {
+        padding-right: 3px;
       }
     </style>
   </head>
 
   <body>
-    <div id="input" contenteditable="true">
-      I'll be home in approximately 20 minutes. I manufacture no excuses.
-    </div>
+    <div id="input" contenteditable="true"></div>
     <div id="output"></div>
     <noscript
       >This page contains webassembly and javascript content, please enable
       javascript in your browser.</noscript
     >
-    <script type="text/javascript" src="./bootstrap.js"></script>
+    <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
