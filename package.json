@@ -24,6 +24,6 @@
     "webpack-dev-server": "^3.10.3"
   },
   "dependencies": {
-    "writing-tools": "^0.2.0"
+    "@writing-tools/writing-tools": "^0.2.1"
   }
 }
