@@ -1,4 +1,4 @@
-import * as wt from "writing-tools";
+import * as wt from "@writing-tools/writing-tools";
 
 let input = document.getElementById("input");
 let output = document.getElementById("output");
