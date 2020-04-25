@@ -10,71 +10,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <style>
-      html,
-      body {
-        height: 100%;
-      }
-      body {
-        margin: 0;
-        padding: 0;
-        font-size: 1.3em;
-        line-height: 1.3em;
-        height: 100%;
-      }
-      #input,
-      #output {
-        height: 99%;
-        display: inline-block;
-        width: 49%;
-        /* max-width: 50%; */
-        padding: 40px;
-        min-height: 300px;
-        vertical-align: top;
-        overflow-wrap: break-word;
-        overflow: scroll;
-        box-sizing: border-box;
-        font-size: inherit;
-        line-height: inherit;
-        font-family: monospace;
-      }
-      textarea {
-        border: none;
-        border-right: 1px solid #ccc;
-      }
-      div {
-        margin: 0;
-        padding: 0;
-      }
-
-      .error {
-        border-bottom: 1px solid #ac141c;
-      }
-
-      .suggestion-wrapper {
-        position: relative;
-        width: 0;
-        height: 0;
-        line-height: 1;
-      }
-
-      .suggestion {
-        margin: 0;
-        position: absolute;
-        top: -1em;
-        height: 1em;
-        min-width: 300px;
-        font-size: 0.8em;
-        padding: 2px;
-        color: #ac141c;
-        vertical-align: top;
-        font-family: "Patrick Hand", cursive;
-      }
-
-      .suggestion svg {
-        padding-right: 3px;
-      }
-    </style>
+    <link rel="stylesheet" href="main.css" />
   </head>
 
   <body>
