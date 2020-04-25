@@ -41,7 +41,6 @@ function addMarkers(markersByStart, text) {
 function runChecks() {
   var htmlNewLines = new RegExp("(<[br^>]*>)", "g");
   let text = input.innerHTML.replace(htmlNewLines, "\n");
-  console.log(text);
 
   var re = new RegExp("(<[^>]*>)", "g");
   text = text.replace(re, "");
