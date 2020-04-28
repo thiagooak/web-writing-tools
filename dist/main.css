@@ -16,7 +16,6 @@ body {
   height: 99%;
   display: inline-block;
   width: 49%;
-  /* max-width: 50%; */
   padding: 40px;
   min-height: 300px;
   vertical-align: top;
@@ -26,6 +25,9 @@ body {
   font-size: inherit;
   line-height: inherit;
   font-family: monospace;
+}
+#output {
+  user-select: none;
 }
 textarea {
   border: none;

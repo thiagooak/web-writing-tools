@@ -46,7 +46,6 @@ function runChecks() {
   text = text.replace(re, "");
 
   var newLines = new RegExp("\n", "g");
-  // let text = input.innerHTML.replace(newLines, "<br>");
 
   output.innerHTML = addMarkers(wt.runChecks(text), text).replace(
     newLines,
@@ -57,9 +56,10 @@ function runChecks() {
 input.innerHTML =
   "Welcome to Writing Tools.<br /><br />" +
   "This text demonstrates what you can do. Type here on the the left and see notes on the right.<br /><br />" +
-  "Have fun! However keep in mind that this is a work in progress.<br /><br />" +
+  "Have fun! However keep in mind that this is sort of a work in progress.<br /><br />" +
   "I'm also working on a command line version of this, the motivation for this project is having something that I can use on the command line as I'm writing technical documentation, I really don't want to copy and paste my text into other online tools as I'm working.<br /><br />" +
-  "Source code for the website: https://github.com/thiagooak/web-writing-tools<br /><br />" +
-  "Source code for the library: https://github.com/thiagooak/writing-tools";
+  "This sentence has been written using the passive voice.<br /><br />" +
+  "The blast completely destroyed the church office.<br /><br />" +
+  "Source code: https://github.com/writing-tools/writing-tools";
 
 runChecks();
